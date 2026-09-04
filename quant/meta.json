@@ -1,6 +1,6 @@
 [{
     "title": "Next.js (App Router SSR)",
-    "url": "/deploy/step-one?template=app-nextjs",
+    "url": "/deploy/app/app-nextjs",
     "summary": "Next.js 14 with server-side rendering and App Router.",
     "content": "Deploy full-featured Next.js 14 applications with server-side rendering on Quant Cloud. Uses the App Router with React Server Components, API routes, and dynamic rendering capabilities.",
     "image": "https://raw.githubusercontent.com/quantcdn-templates/app-nextjs/main/quant/screenshot.png",
