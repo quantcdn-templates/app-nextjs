@@ -38,8 +38,7 @@ ENV HOSTNAME="0.0.0.0"
 # Expose proxy port
 EXPOSE 3000
 
-# Start the Next.js server
-# HOSTNAME must be forced at exec time: Fargate's container runtime sets HOSTNAME to the
+# HOSTNAME must be forced at exec time: the platform's container runtime can set HOSTNAME to the
 # task ENI hostname, overriding the ENV above — Next standalone then binds to the ENI IP
 # and the quant-proxy's 127.0.0.1:3001 forward gets ECONNREFUSED.
 CMD ["sh", "-c", "HOSTNAME=0.0.0.0 exec node server.js"]
